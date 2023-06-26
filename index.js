@@ -5,7 +5,7 @@ const app = express();
 
 
 app.get('/', (req, res) => {
-    res.send("message : base url")
+    res.send(`message : base url ${process.env.NAME}`)
 })
 
 app.get('/blogs', (req, res) => {
